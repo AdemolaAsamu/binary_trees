@@ -1,0 +1,11 @@
+#!/bin/bash
+# Get the name of the PROJECT
+project_name=$(basename "$(pwd)")
+
+echo "Binary Trees Project ($project_name) Repository :" > README.md
+echo "- AUTHOR  : Ademola ASAMU" >> README.md
+counter=0
+for item in *; do
+	counter=$((counter + 1))
+	echo "> - $counter - $item" >> README.md
+done	
